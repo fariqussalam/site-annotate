@@ -2,6 +2,8 @@
 
 zero-dependency, drop-in visual annotation widget for collecting page feedback for AI coding agents. **Only Tested on html static sites**.
 
+This widget really helps me when developing landing pages.
+
 ## Demo
 
 [Demo](https://github.com/user-attachments/assets/ed248857-c98f-4ad2-9a45-8324a6996c75)
