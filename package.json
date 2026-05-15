@@ -1,0 +1,30 @@
+{
+  "name": "site-annotate",
+  "version": "0.1.0",
+  "description": "Vanilla JavaScript visual annotation widget for collecting page feedback for AI coding agents.",
+  "type": "module",
+  "license": "MIT",
+  "author": "Fariq",
+  "keywords": [
+    "annotation",
+    "feedback",
+    "widget",
+    "static-site",
+    "vanilla-js",
+    "browser"
+  ],
+  "files": [
+    "src/annotator.ts",
+    "dist/annotator.js",
+    "dist/annotator.min.js"
+  ],
+  "scripts": {
+    "build": "npm run clean && tsc -p tsconfig.json && terser dist/annotator.js -c -m -o dist/annotator.min.js --comments '/Site Annotate/'",
+    "build:js": "tsc -p tsconfig.json",
+    "clean": "rm -rf dist"
+  },
+  "devDependencies": {
+    "terser": "^5.47.1",
+    "typescript": "^5.9.3"
+  }
+}
