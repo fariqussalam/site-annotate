@@ -24,16 +24,13 @@
   "files": [
     "src/annotator.ts",
     "src/styles.ts",
-    "dist/annotator.js",
-    "dist/annotator.min.js"
+    "dist/annotator.js"
   ],
   "scripts": {
-    "build": "npm run clean && tsc -p tsconfig.json && terser dist/annotator.js -c -m -o dist/annotator.min.js --comments '/Site Annotate/'",
-    "build:js": "tsc -p tsconfig.json",
+    "build": "npm run clean && tsc -p tsconfig.json",
     "clean": "rm -rf dist"
   },
   "devDependencies": {
-    "terser": "^5.47.1",
     "typescript": "^5.9.3"
   }
 }
