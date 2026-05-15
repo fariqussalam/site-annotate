@@ -5,6 +5,14 @@
   "type": "module",
   "license": "MIT",
   "author": "Fariq",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fariqussalam/site-annotate.git"
+  },
+  "bugs": {
+    "url": "https://github.com/fariqussalam/site-annotate/issues"
+  },
+  "homepage": "https://github.com/fariqussalam/site-annotate#readme",
   "keywords": [
     "annotation",
     "feedback",
@@ -15,6 +23,7 @@
   ],
   "files": [
     "src/annotator.ts",
+    "src/styles.ts",
     "dist/annotator.js",
     "dist/annotator.min.js"
   ],
