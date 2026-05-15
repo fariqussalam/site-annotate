@@ -1,16 +1,16 @@
 # Site Annotate
 
-A zero-dependency, drop-in visual annotation widget for collecting page feedback for AI coding agents. **Works on static sites only** — it reads and writes to `localStorage` and injects UI directly into the DOM.
+zero-dependency, drop-in visual annotation widget for collecting page feedback for AI coding agents. **Only Tested on html static sites**.
 
 ## Demo
 
-> TODO: add GIF or screenshot of the widget in action
+[Demo](https://github.com/user-attachments/assets/ed248857-c98f-4ad2-9a45-8324a6996c75)
 
 ## Quick start
 
 ### Option 1: Ask your coding agent
 
-Paste this prompt into Claude Code, Codex, OpenCode, Pi, or any agent with file-editing capabilities:
+Paste this prompt into Claude Code, Codex, OpenCode, Pi, etc:
 
 ```
 Add the Site Annotate widget to this project. Download https://raw.githubusercontent.com/fariqussalam/site-annotate/main/dist/annotator.js into scripts/annotator.js and inject <script src="scripts/annotator.js"></script> before the closing </body> tag.
@@ -28,6 +28,8 @@ Download `dist/annotator.js` and include it before `</body>`:
 
 ```bash
 git clone https://github.com/fariqussalam/site-annotate.git
+
+
 cd site-annotate
 npm install
 npm run build
@@ -35,11 +37,9 @@ npm run build
 
 Then copy `dist/annotator.js` into your static site.
 
-## Use
+## Usage
 
-The annotator adds a floating toolbar. Press **Cmd/Ctrl + Shift + A** to enter selection mode, click an element, add feedback, then copy annotations as Markdown.
-
-Annotations are stored in `localStorage` under `siteannotate:annotations`.
+The annotator adds a floating toolbar. Click annotate, click an element, add feedback, then copy annotations as Markdown.
 
 ## Development
 
